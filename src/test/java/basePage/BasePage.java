@@ -12,7 +12,7 @@ public class BasePage {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
-
+// adding new comment from Anu
 
     //adding comment
 }
