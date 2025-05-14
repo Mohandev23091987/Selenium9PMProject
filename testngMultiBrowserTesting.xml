@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+
+    <test verbose="2" preserve-order="true"
+          name="Test1">
+
+       <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://tutorialsninja.com/demo/"/>
+
+        <classes>
+            <class name="scriptClasses.Registration">
+                <methods>
+                    <include name="registrationTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test verbose="2" preserve-order="true"
+          name="Test3">
+
+        <parameter name="browser" value="edge"/>
+        <parameter name="url" value="https://tutorialsninja.com/demo/"/>
+
+        <classes>
+            <class name="scriptClasses.Registration">
+                <methods>
+                    <include name="registrationTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
