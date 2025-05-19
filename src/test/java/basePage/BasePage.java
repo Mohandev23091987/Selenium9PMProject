@@ -11,7 +11,7 @@ public class BasePage {
     public BasePage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver,this);
-//add a new line
+
     }
 // adding new comment from Anu
     //new comments changed
