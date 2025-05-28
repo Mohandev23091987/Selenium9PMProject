@@ -79,6 +79,12 @@ public class BaseTestClass {
 
 
         // this is anew line
+        // this is anew line
+        // this is anew line
+        // this is anew line
+        // this is anew line
+        // this is anew line
+        // this is anew line
 
     }
 
