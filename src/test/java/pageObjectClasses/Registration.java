@@ -89,6 +89,8 @@ public class Registration extends BasePage {
 
     }
 	//this is the new line added
+	
+	//this is the second line added
 
 
 }
