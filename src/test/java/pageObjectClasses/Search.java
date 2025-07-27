@@ -5,14 +5,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePage extends BasePage {
+public class Search extends BasePage {
 
     //constructor
-    public HomePage(WebDriver driver){
+    public Search(WebDriver driver){
        super(driver);
     }
 
     //locators
+
+
+
+
 
     @FindBy (xpath ="//span[text()='My Account']") WebElement link_MyAccount;
 
@@ -29,6 +33,9 @@ public class HomePage extends BasePage {
 
 
     //methods
+
+
+
 
     public void clickOnMyAccount(){
         link_MyAccount.click();

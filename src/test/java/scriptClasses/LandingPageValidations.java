@@ -64,9 +64,9 @@ public class LandingPageValidations extends BaseTestClass {
         //5. Verify that you are redirected to the Account Landing Page
         Assert.assertTrue(found);
 
-        //6. Verify the presence of the following sections:
-
         Assert.assertTrue(false);
+
+        //6. Verify the presence of the following sections:
         Assert.assertEquals(landingPage.verifyMyAccountSeciton(), true, "Account section is not diplayed");
 
         Assert.assertEquals(landingPage.verifyMyOrdersSeciton(), true, "My Orders section is not diplayed");
