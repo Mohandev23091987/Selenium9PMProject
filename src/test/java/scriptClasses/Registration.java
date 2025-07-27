@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import pageObjectClasses.HomePage;
 
@@ -14,7 +15,19 @@ import java.util.concurrent.TimeUnit;
 public class Registration extends BaseTestClass {
 
 
-    @Test (groups={"Regression","Smoke"})
+    @BeforeSuite
+    public void beforeSuiteMethod(){
+        System.out.println("this is beforeSuiteMethod");
+    }
+
+    @Test
+    public void login(){
+        System.out.println("this is beforeSuiteMethod");
+    }
+
+
+
+    @Test (groups={"Regression","Smoke"},dependsOnMethods ="login",alwaysRun = true)
     public void registrationTest(){
 
         logger.info("Registration Test Started");
@@ -37,6 +50,8 @@ public class Registration extends BaseTestClass {
         logger.fatal("this is fatal message");
 
     }
+
+
 
 
 }

@@ -27,16 +27,17 @@ public class BaseTestClass {
     public Properties proObject;
 
     @BeforeMethod(alwaysRun = true)
-    public void setUp() throws IOException {
+    @Parameters("browser")
+    public void setUp( String browserName) throws IOException {
 
         //read properties file
-        FileReader file = new FileReader(".//src//test//resources//config.properties");
-        //create object of properties class
-        proObject = new Properties();
-        //load properties file
-        proObject.load(file);
-        //get the value of properties
-        String browserName = proObject.getProperty("browsername");
+//        FileReader file = new FileReader(".//src//test//resources//config.properties");
+//        //create object of properties class
+//        proObject = new Properties();
+//        //load properties file
+//        proObject.load(file);
+//        //get the value of properties
+//        String browserName = proObject.getProperty("browsername");
 
         logger = LogManager.getLogger(this.getClass());
         //driver = new ChromeDriver();
