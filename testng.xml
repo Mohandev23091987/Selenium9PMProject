@@ -8,6 +8,9 @@
 
     <test verbose="2" preserve-order="true"
           name="C:/Users/sures/IdeaProjects/com.tutorialsninja/src/test/java/scriptClasses/LandingPageValidations.java">
+
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://tutorialsninja.com/demo/"/>
         <classes>
             <class name="scriptClasses.LandingPageValidations">
                 <methods>
